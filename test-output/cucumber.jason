@@ -1,0 +1,521 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "open the Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 1686996100,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the swag labs application in browser",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_have_opened_the_swag_labs_application_in_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T17:31:12.035Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1369832000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 14,
+        "name": "Validate the successful Login",
+        "description": "",
+        "id": "this-feature-would-be-used-to-check-the-login-functionality;validate-the-successful-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 121204800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 155796600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginStepsSauceDemo.i_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 94589600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on the login Button",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8165700,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should be Landed on the products page",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_should_be_landed_on_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "open the Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 235848700,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the swag labs application in browser",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_have_opened_the_swag_labs_application_in_browser()"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T17:31:15.530Z",
+        "before": [
+          {
+            "result": {
+              "duration": 812289700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 34,
+        "name": "Validate the Negative Login",
+        "description": "",
+        "id": "this-feature-would-be-used-to-check-the-login-functionality;validate-the-negative-login;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 47816900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 171193200,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce123\"",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginStepsSauceDemo.i_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 58127600,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "I click on the login Button",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 26111200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
+                  "offset": 31
+                }
+              ],
+              "location": "LoginStepsSauceDemo.i_should_get_the_error_message(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "This feature would be used to check the login functionality",
+    "description": "",
+    "id": "this-feature-would-be-used-to-check-the-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "open the Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 354903800,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the swag labs application in browser",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_have_opened_the_swag_labs_application_in_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 173326900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginStepsSauceDemo.i_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 103772700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the login Button",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5769200,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be Landed on the products page",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_should_be_landed_on_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T17:31:16.891Z",
+        "before": [
+          {
+            "result": {
+              "duration": 763218000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "Compare product pricing",
+        "description": "",
+        "id": "products;compare-product-pricing",
+        "after": [
+          {
+            "result": {
+              "duration": 48536200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 38919500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I landed on the products page",
+            "match": {
+              "location": "Products.i_landed_on_the_products_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147718200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "product prices should be as below",
+            "match": {
+              "location": "Products.product_prices_should_be_as_below(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Backpack",
+                  "$29.99"
+                ]
+              },
+              {
+                "cells": [
+                  "Sauce Labs Bike Light",
+                  "$9.99"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "open the Application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 901618000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "I have opened the swag labs application in browser",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_have_opened_the_swag_labs_application_in_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 166814100,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"standard_user\"",
+                  "offset": 17
+                },
+                {
+                  "val": "\"secret_sauce\"",
+                  "offset": 46
+                }
+              ],
+              "location": "LoginStepsSauceDemo.i_enter_username_and_password(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90080900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I click on the login Button",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_click_on_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5220600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I should be Landed on the products page",
+            "match": {
+              "location": "LoginStepsSauceDemo.i_should_be_landed_on_the_products_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-04-10T17:31:18.536Z",
+        "before": [
+          {
+            "result": {
+              "duration": 783273100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.setup()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Compare product wrong pricing",
+        "description": "",
+        "id": "products;compare-product-wrong-pricing",
+        "after": [
+          {
+            "result": {
+              "duration": 65469000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "BaseClass.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4413900,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I landed on the products page",
+            "match": {
+              "location": "Products.i_landed_on_the_products_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "error_message": "org.junit.ComparisonFailure: expected:\u003c$1[5].99\u003e but was:\u003c$1[8].99\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefs.Products.product_prices_should_be_as_below(Products.java:46)\r\n\tat ✽.product prices should be as below(file:src/test/java/features/poduct.feature:19)\r\n",
+              "duration": 26965200,
+              "status": "failed"
+            },
+            "line": 19,
+            "name": "product prices should be as below",
+            "match": {
+              "location": "Products.product_prices_should_be_as_below(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Sauce Labs Bolt T-Shirt",
+                  "$18.99"
+                ]
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Products",
+    "description": "",
+    "id": "products",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/poduct.feature",
+    "tags": []
+  }
+]
