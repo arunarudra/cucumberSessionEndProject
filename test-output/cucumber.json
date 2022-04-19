@@ -11,234 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 840390000,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I have opened the swag labs application in browser",
-            "match": {
-              "location": "LoginStepsSauceDemo.i_have_opened_the_swag_labs_application_in_browser()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-04-19T12:40:59.473Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3902892800,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseClass.setup()"
-            }
-          }
-        ],
-        "line": 14,
-        "name": "Validate the successful Login",
-        "description": "",
-        "id": "this-feature-would-be-used-to-check-the-login-functionality;validate-the-successful-login;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 121043600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseClass.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 442625700,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "I enter username \"standard_user\" and password \"secret_sauce\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 17
-                },
-                {
-                  "val": "\"secret_sauce\"",
-                  "offset": 46
-                }
-              ],
-              "location": "LoginStepsSauceDemo.i_enter_username_and_password(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 244694700,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "I click on the login Button",
-            "match": {
-              "location": "LoginStepsSauceDemo.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 21378500,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "I should be Landed on the products page",
-            "match": {
-              "location": "LoginStepsSauceDemo.i_should_be_landed_on_the_products_page()"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@sanity"
-          }
-        ]
-      },
-      {
-        "line": 3,
-        "name": "open the Application",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 598618800,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "I have opened the swag labs application in browser",
-            "match": {
-              "location": "LoginStepsSauceDemo.i_have_opened_the_swag_labs_application_in_browser()"
-            },
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2022-04-19T12:41:05.106Z",
-        "before": [
-          {
-            "result": {
-              "duration": 1484357600,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseClass.setup()"
-            }
-          }
-        ],
-        "line": 34,
-        "name": "Validate the Negative Login",
-        "description": "",
-        "id": "this-feature-would-be-used-to-check-the-login-functionality;validate-the-negative-login;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 134423200,
-              "status": "passed"
-            },
-            "match": {
-              "location": "BaseClass.tearDown()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 557251500,
-              "status": "passed"
-            },
-            "line": 28,
-            "name": "I enter username \"standard_user\" and password \"secret_sauce123\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"standard_user\"",
-                  "offset": 17
-                },
-                {
-                  "val": "\"secret_sauce123\"",
-                  "offset": 46
-                }
-              ],
-              "location": "LoginStepsSauceDemo.i_enter_username_and_password(String,String)"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 195439800,
-              "status": "passed"
-            },
-            "line": 29,
-            "name": "I click on the login Button",
-            "match": {
-              "location": "LoginStepsSauceDemo.i_click_on_the_login_button()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 100120800,
-              "status": "passed"
-            },
-            "line": 30,
-            "name": "I should get the error message \"Epic sadface: Username and password do not match any user in this service\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"Epic sadface: Username and password do not match any user in this service\"",
-                  "offset": 31
-                }
-              ],
-              "location": "LoginStepsSauceDemo.i_should_get_the_error_message(String)"
-            },
-            "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "name": "@sanity"
-          }
-        ]
-      }
-    ],
-    "name": "This feature would be used to check the login functionality",
-    "description": "",
-    "id": "this-feature-would-be-used-to-check-the-login-functionality",
-    "keyword": "Feature",
-    "uri": "file:src/test/java/features/login.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 3,
-        "name": "open the Application",
-        "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 577607700,
+              "duration": 331254500,
               "status": "passed"
             },
             "line": 4,
@@ -250,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 519463800,
+              "duration": 169285200,
               "status": "passed"
             },
             "line": 5,
@@ -272,7 +45,7 @@
           },
           {
             "result": {
-              "duration": 370268800,
+              "duration": 100824000,
               "status": "passed"
             },
             "line": 6,
@@ -284,7 +57,7 @@
           },
           {
             "result": {
-              "duration": 36020600,
+              "duration": 8514100,
               "status": "passed"
             },
             "line": 7,
@@ -297,11 +70,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-04-19T12:41:08.196Z",
+        "start_timestamp": "2022-04-19T14:37:39.461Z",
         "before": [
           {
             "result": {
-              "duration": 1081676600,
+              "duration": 1669952400,
               "status": "passed"
             },
             "match": {
@@ -316,7 +89,7 @@
         "after": [
           {
             "result": {
-              "duration": 141605900,
+              "duration": 73766900,
               "status": "passed"
             },
             "match": {
@@ -329,7 +102,7 @@
         "steps": [
           {
             "result": {
-              "duration": 216096000,
+              "duration": 26055700,
               "status": "passed"
             },
             "line": 11,
@@ -341,7 +114,7 @@
           },
           {
             "result": {
-              "duration": 175629300,
+              "duration": 112354300,
               "status": "passed"
             },
             "line": 12,
@@ -381,7 +154,7 @@
         "steps": [
           {
             "result": {
-              "duration": 469343400,
+              "duration": 324879800,
               "status": "passed"
             },
             "line": 4,
@@ -393,7 +166,7 @@
           },
           {
             "result": {
-              "duration": 470950400,
+              "duration": 168900600,
               "status": "passed"
             },
             "line": 5,
@@ -415,7 +188,7 @@
           },
           {
             "result": {
-              "duration": 370624300,
+              "duration": 94671300,
               "status": "passed"
             },
             "line": 6,
@@ -427,7 +200,7 @@
           },
           {
             "result": {
-              "duration": 35176100,
+              "duration": 6074000,
               "status": "passed"
             },
             "line": 7,
@@ -440,11 +213,11 @@
         ]
       },
       {
-        "start_timestamp": "2022-04-19T12:41:11.342Z",
+        "start_timestamp": "2022-04-19T14:37:42.000Z",
         "before": [
           {
             "result": {
-              "duration": 1316215100,
+              "duration": 1354998900,
               "status": "passed"
             },
             "match": {
@@ -459,7 +232,7 @@
         "after": [
           {
             "result": {
-              "duration": 157146400,
+              "duration": 43599700,
               "status": "passed"
             },
             "match": {
@@ -472,7 +245,7 @@
         "steps": [
           {
             "result": {
-              "duration": 20671600,
+              "duration": 6184300,
               "status": "passed"
             },
             "line": 18,
@@ -484,9 +257,8 @@
           },
           {
             "result": {
-              "error_message": "org.junit.ComparisonFailure: expected:\u003c$1[5].99\u003e but was:\u003c$1[8].99\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:115)\r\n\tat org.junit.Assert.assertEquals(Assert.java:144)\r\n\tat stepDefs.Products.product_prices_should_be_as_below(Products.java:46)\r\n\tat ✽.product prices should be as below(file:src/test/java/features/poduct.feature:19)\r\n",
-              "duration": 185331600,
-              "status": "failed"
+              "duration": 38900900,
+              "status": "passed"
             },
             "line": 19,
             "name": "product prices should be as below",

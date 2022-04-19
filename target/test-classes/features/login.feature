@@ -3,7 +3,6 @@ Feature: This feature would be used to check the login functionality
   Background: open the Application
     Given I have opened the swag labs application in browser
 	
-	@sanity
   Scenario Outline: Validate the successful Login
     When I enter username "<username>" and password "<password>"
     And I click on the login Button
@@ -23,7 +22,7 @@ Feature: This feature would be used to check the login functionality
       | locked_out_user | secret_sauce |
       | problem_user    | secret_sauce |
 
-	@sanity
+	
   Scenario Outline: Validate the Negative Login
     When I enter username "<username>" and password "<password>"
     And I click on the login Button
