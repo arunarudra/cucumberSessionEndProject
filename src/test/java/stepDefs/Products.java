@@ -31,12 +31,7 @@ public class Products {
 	@Then("product prices should be as below")
 	public void product_prices_should_be_as_below(DataTable dataTable) {
 	    int rows=dataTable.height();
-	   /*List<WebElement> prices = driver.findElements(By.className("inventory_item_price"));
-		List<WebElement> product=  driver.findElements(By.xpath("//div[@class='inventory_item_name']"));
-	    
-		for(int i=0;i<prices.size();i++) {
-			productPrice.put(product.get(i).getText(),Double.parseDouble(prices.get(i).getText().replace("$","").trim()));
-		} */
+	   
 	    for (int i=0;i<rows;i++) {
 	    	product=dataTable.cell(i, 0);
 	    	tablePrice = dataTable.cell(i, 1);
@@ -44,7 +39,6 @@ public class Products {
 		    String actualprice=price.getText();
 		    System.out.println(actualprice);
 		    
-		  //  Assert.assertEquals(actualprice, tablePrice);
 		    if (actualprice.equals(tablePrice)) {
 		    	Assert.assertTrue(true);
 		    	System.out.println("Both prices are equal");
@@ -55,8 +49,5 @@ public class Products {
 		    } 
 	    }
 	}
-	/*@Then("product price comparision failure should occur")
-	public void product_price_comparision_failure_should_occur() {
-	    Assert.assertTrue(false);
-	}*/
+	
 }

@@ -11,7 +11,7 @@ Feature: This feature would be used to check the login functionality
     Examples: 
       | username      | password     |
       | standard_user | secret_sauce |
-
+	@regression
   Scenario Outline: Validate login functionality with multiple data
     When I enter username "<username>" and password "<password>"
     And I click on the login Button
@@ -22,7 +22,7 @@ Feature: This feature would be used to check the login functionality
       | locked_out_user | secret_sauce |
       | problem_user    | secret_sauce |
 
-	
+	@regression
   Scenario Outline: Validate the Negative Login
     When I enter username "<username>" and password "<password>"
     And I click on the login Button
